@@ -41,10 +41,6 @@ img {
 
 /* ЛОГОТИП */
 .logo {
-  margin-right: 93px;
-  padding-top: 22px;
-  padding-bottom: 27px;
-
   font-family: "raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
@@ -52,6 +48,12 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--accent-text-color);
+}
+
+.nav-panel .logo {
+  margin-right: 93px;
+  padding-top: 22px;
+  padding-bottom: 27px;
 }
 
 .header-logo {
@@ -64,15 +66,16 @@ img {
 
 /* ШАПКА САЙТА */
 .header-container {
+  display: flex;
+  align-items: center;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
 }
 .header-container a {
-  display: inline-block;
+  display: block;
 }
 
 .nav-panel {
@@ -84,7 +87,7 @@ img {
   padding-left: 0;
 }
 
-.site-nav-item:not(:last-child) {
+.site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -107,6 +110,8 @@ img {
 
 .header-contacts {
   display: flex;
+  margin-left: auto;
+  padding-left: 0;
 
   font-weight: 500;
   font-size: 14px;
@@ -117,6 +122,15 @@ img {
 .header-contacts a:hover,
 .header-contacts a:focus {
   color: var(--accent-text-color);
+}
+
+.header-contacts .link {
+  padding-top: 30px;
+  padding-bottom: 34px;
+}
+
+.header-contacts .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 /* ПОДВАЛ САЙТА */
@@ -341,6 +355,8 @@ footer {
 
 /* Галерея проектов */
 .container .sorting-buttons {
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -350,6 +366,7 @@ footer {
 
 .projects-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .projects-list .title {
