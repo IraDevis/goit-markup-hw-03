@@ -366,6 +366,12 @@ footer {
   margin-bottom: 50px;
 }
 
+.container .card {
+  border-left: 1px solid var(--border-color-elements);
+  border-right: 1px solid var(--border-color-elements);
+  border-bottom: 1px solid var(--border-color-elements);
+}
+
 .btn-item:not(:last-child) {
   margin-right: 8px;
 }
