@@ -247,10 +247,15 @@ footer {
 
 .feature-list {
   display: flex;
+  background-color: violet;
 }
 
 .feature-item {
-  width: 270px;
+  width: calc((100%-90px) / 4);
+}
+
+.feature-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .feature-item .title {
@@ -282,8 +287,16 @@ footer {
 }
 
 .work-list {
-  width: 370px;
   display: flex;
+  background-color: violet;
+}
+
+.work-item {
+  width: calc((100%-60px) / 3);
+}
+
+.work-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Команда */
