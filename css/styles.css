@@ -247,7 +247,6 @@ footer {
 
 .feature-list {
   display: flex;
-  background-color: violet;
 }
 
 .feature-item {
@@ -288,7 +287,6 @@ footer {
 
 .work-list {
   display: flex;
-  background-color: violet;
 }
 
 .work-item {
@@ -312,7 +310,7 @@ footer {
 
 .team-list .name {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -332,6 +330,18 @@ footer {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0 0 4px 4px;
+
+  background-color: var(--main-bg-color);
 }
 
 /* СТРАНИЦА "ПОРТФОЛИО" */
