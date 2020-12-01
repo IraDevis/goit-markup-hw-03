@@ -362,7 +362,6 @@ footer {
   border-color: transparent;
   border-radius: 4px;
   outline: none;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -404,7 +403,7 @@ footer {
 }
 
 .project-item {
-  width: 370px;
+  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
