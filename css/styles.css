@@ -247,7 +247,7 @@ footer {
 }
 
 .feature-item {
-  width: calc((100%-90px) / 4);
+  width: calc((100% - 90px) / 4);
 }
 
 .feature-item:not(:last-child) {
@@ -287,7 +287,7 @@ footer {
 }
 
 .work-item {
-  width: calc((100%-60px) / 3);
+  width: calc((100% - 60px) / 3);
 }
 
 .work-item:not(:last-child) {
